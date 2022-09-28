@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Aref Ruqaa Ink', serif;
+    background-color: #F0EBE3;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.hotel-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box {
+    width: 30%;
+}
+.hotel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image {
+    padding-top: 50px;
+}
+h1 {
+    font-size: 36px;
+    letter-spacing: 10px;
+    color: #1C3879;
+    font-weight: 600;
+}
+.title {
+    margin: 0;
+    padding: 20px 10px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    color: #1C3879;
+}
+.text {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Aref Ruqaa Ink', serif;
+    color: #607EAA;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.btn {
+    margin: 10px 20px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: #E4DCCF;
+    color: #607EAA;
+}
+.btn:hover{
+    background-color: #607EAA;
+    color: #E4DCCF;
+}
+.direction {
+    margin: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #E4DCCF;
+}
+.nav-links {
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #1C3879;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.nav-links:hover {
+    background-color: #607EAA;
+    color: #E4DCCF;
+}
+.about-hotel-image {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-text {
+    margin-bottom: 100px;
+}
+.footer-btn {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.footer-part {
+    margin: 50px 0;
+}
+.gallery {
+    background-color: transparent;
+}
+.more-less {
+    border: none;
+    color: #1C3879;
+    font-style: italic;
+    background-color: transparent;
+    cursor: pointer;
+}.more-less:hover{
+    color: #E4DCCF;
+    background-color: #1C3879;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media all and (max-width: 1200px) and (min-width: 820px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+    }
+    .box {
+        width: 50%;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@media all and (max-width: 768px) and (min-width: 480px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+    }
+    .box {
+        width: 50%;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+    .box {
+        width:  100%;
+    }
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .btn {
+        margin: 5px;
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
